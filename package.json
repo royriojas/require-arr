@@ -1,7 +1,7 @@
 {
   "name": "require-arr",
   "version": "1.0.0",
-  "description": "browserify transform to remove calls to console methods that do not match the given filter",
+  "description": "browserify transform to replace require files using a glob and transforming them to an array of requires",
   "main": "index.js",
   "scripts": {
     "beautify": "esbeautifier index.js 'src/**/*.js' 'specs/**/*.js'",
@@ -41,12 +41,11 @@
   },
   "homepage": "https://github.com/royriojas/require-arr",
   "keywords": [
-    "console filter",
-    "console",
-    "filter methods",
+    "require transform",
+    "require glob",
+    "require patterns",
     "browserify transform",
     "browserify",
-    "override console",
     "replace calls to require"
   ]
 }

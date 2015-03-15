@@ -2,7 +2,7 @@
 [![Build Status](http://img.shields.io/travis/royriojas/require-arr.svg?style=flat)](https://travis-ci.org/royriojas/require-arr)
 
 # require-arr
-> browserify transform to remove calls to console methods that do not match the given filter 
+> browserify transform to replace require files using a glob and transforming them to an array of requires 
 
 ## Overview
 This transform will turn this: 
