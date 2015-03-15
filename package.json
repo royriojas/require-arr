@@ -1,7 +1,7 @@
 {
   "name": "require-arr",
   "version": "1.0.0",
-  "description": "browserify transform to replace require files using a glob and transforming them to an array of requires",
+  "description": "browserify transform to replace `require` calls to globs to an array of `requires`",
   "main": "index.js",
   "scripts": {
     "beautify": "esbeautifier index.js 'src/**/*.js' 'specs/**/*.js'",
