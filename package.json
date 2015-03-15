@@ -1,0 +1,52 @@
+{
+  "name": "require-arr",
+  "version": "1.0.0",
+  "description": "browserify transform to remove calls to console methods that do not match the given filter",
+  "main": "index.js",
+  "scripts": {
+    "beautify": "esbeautifier index.js 'src/**/*.js' 'specs/**/*.js'",
+    "beautify-check": "esbeautifier -k index.js 'src/**/*.js' 'specs/**/*.js'",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js specs/ -c './configs/eslint.json'",
+    "test": "mocha-runner 'specs/**/*.js'",
+    "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
+    "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
+    "check": "npm run beautify && npm run eslint",
+    "prepush": "npm run beautify-check && npm run eslint && npm test",
+    "bump": "bumpery --verify='npm run prepush'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royriojas/require-arr"
+  },
+  "license": "MIT",
+  "author": "Roy Riojas (http://royriojas.com)",
+  "prepush": [
+    "npm run prepush"
+  ],
+  "devDependencies": {
+    "eslint": "^0.16.1",
+    "eslint-friendly-formatter": "^1.0.3",
+    "istanbul": "^0.3.7",
+    "mocha-runner": "^1.0.4",
+    "prepush": "^1.0.2",
+    "read-file": "^0.1.2",
+    "watch-spawn": "^1.0.3"
+  },
+  "dependencies": {
+    "browserify-transform-tools": "^1.3.3",
+    "glob-expand": "0.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/royriojas/require-arr/issues"
+  },
+  "homepage": "https://github.com/royriojas/require-arr",
+  "keywords": [
+    "console filter",
+    "console",
+    "filter methods",
+    "browserify transform",
+    "browserify",
+    "override console",
+    "replace calls to require"
+  ]
+}
