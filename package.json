@@ -1,6 +1,6 @@
 {
   "name": "require-arr",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "description": "browserify transform to replace require files using a glob and transforming them to an array of requires",
   "main": "index.js",
   "scripts": {
