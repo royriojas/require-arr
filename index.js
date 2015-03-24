@@ -20,7 +20,7 @@ module.exports = transformTools.makeFalafelTransform( 'require-arr', options, fu
       return val;
     } );
 
-    console.log( args );
+    //console.log( args );
 
     var files = expand.apply( null, args ).map( function ( f ) {
 
