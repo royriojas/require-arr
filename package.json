@@ -1,6 +1,6 @@
 {
   "name": "require-arr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "browserify transform to replace `require` calls to globs to an array of `requires`",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
     "lint": "npm run beautify && npm run eslint",
     "check": "npm run beautify-check && npm run eslint && npm test",
-    "bump": "bumpery --verify='npm run prepush'",
+    "bump": "bumpery --verify='npm run check'",
     "changelog": "changelogx -f markdown -o ./changelog.md",
     "install-hooks": "changelogx install-hook && prepush install"
   },
