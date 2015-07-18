@@ -1,6 +1,6 @@
 {
   "name": "require-arr",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "browserify transform to replace `require` calls to globs to an array of `requires`",
   "main": "index.js",
   "scripts": {
