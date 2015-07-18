@@ -1,5 +1,14 @@
 
 # require-arr - Changelog
+## v1.0.5
+- **Build Scripts Changes**
+  - Release v1.0.5 - [cca5f09]( https://github.com/royriojas/require-arr/commit/cca5f09 ), [royriojas](https://github.com/royriojas), 17/07/2015 18:02:07
+    
+  - Update browserify-transform-tools - [a6de24d]( https://github.com/royriojas/require-arr/commit/a6de24d ), [royriojas](https://github.com/royriojas), 17/07/2015 18:01:47
+    
+- **Documentation**
+  - Generate changelog - [0abad8f]( https://github.com/royriojas/require-arr/commit/0abad8f ), [royriojas](https://github.com/royriojas), 17/07/2015 17:41:05
+    
 ## v1.0.4
 - **Build Scripts Changes**
   - Release v1.0.4 - [ec3329d]( https://github.com/royriojas/require-arr/commit/ec3329d ), [royriojas](https://github.com/royriojas), 17/07/2015 17:40:50
