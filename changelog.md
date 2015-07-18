@@ -1,5 +1,22 @@
 
 # require-arr - Changelog
+## v1.0.4
+- **Build Scripts Changes**
+  - Release v1.0.4 - [ec3329d]( https://github.com/royriojas/require-arr/commit/ec3329d ), [royriojas](https://github.com/royriojas), 17/07/2015 17:40:50
+    
+  - Remove unused files - [1acea76]( https://github.com/royriojas/require-arr/commit/1acea76 ), [royriojas](https://github.com/royriojas), 17/07/2015 17:40:37
+    
+## v1.0.3
+- **Build Scripts Changes**
+  - Release v1.0.3 - [673a952]( https://github.com/royriojas/require-arr/commit/673a952 ), [royriojas](https://github.com/royriojas), 17/07/2015 17:26:38
+    
+- **Enhancements**
+  - Limit the extensions over which transform is applied - [46975c8]( https://github.com/royriojas/require-arr/commit/46975c8 ), [royriojas](https://github.com/royriojas), 17/07/2015 17:26:27
+    
+#### Changelog
+- **Documentation**
+  - generated changelog - [e891863]( https://github.com/royriojas/require-arr/commit/e891863 ), [Roy Riojas](https://github.com/Roy Riojas), 24/03/2015 16:51:06
+    
 ## v1.0.2
 - **Build Scripts Changes**
   - Release v1.0.2 - [70e7a11]( https://github.com/royriojas/require-arr/commit/70e7a11 ), [Roy Riojas](https://github.com/Roy Riojas), 24/03/2015 16:50:26
