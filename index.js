@@ -1,7 +1,16 @@
 var transformTools = require( 'browserify-transform-tools' );
 var path = require( 'path' );
 
-var options = {};
+var options = {
+  excludeExtensions: [
+    '.json'
+  ],
+  includeExtensions: [
+    '.jsx',
+    '.js',
+    '.es6'
+  ]
+};
 var expand = require( 'glob-expand' );
 
 module.exports = transformTools.makeFalafelTransform( 'require-arr', options, function ( node, transformOptions, done ) {
