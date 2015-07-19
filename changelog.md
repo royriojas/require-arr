@@ -1,5 +1,15 @@
 
 # require-arr - Changelog
+## v1.0.7
+- **Build Scripts Changes**
+  - Release v1.0.7 - [2a34b8d]( https://github.com/royriojas/require-arr/commit/2a34b8d ), [royriojas](https://github.com/royriojas), 19/07/2015 06:27:41
+    
+- **Bug Fixes**
+  - remove exclude extensions in favor of include extensions - [fb70bb1]( https://github.com/royriojas/require-arr/commit/fb70bb1 ), [royriojas](https://github.com/royriojas), 19/07/2015 06:27:37
+    
+- **Documentation**
+  - Generate changelog - [75e0e67]( https://github.com/royriojas/require-arr/commit/75e0e67 ), [royriojas](https://github.com/royriojas), 19/07/2015 03:14:20
+    
 ## v1.0.6
 - **Build Scripts Changes**
   - Release v1.0.6 - [70b634a]( https://github.com/royriojas/require-arr/commit/70b634a ), [royriojas](https://github.com/royriojas), 19/07/2015 03:14:07
