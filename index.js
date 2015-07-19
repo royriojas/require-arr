@@ -13,10 +13,11 @@ var options = {
 };
 var expand = require( 'glob-expand' );
 
-module.exports = transformTools.makeFalafelTransform( 'require-arr', options, function ( node, transformOptions, done ) {
+var transformExclude = require( 'browserify-transform-tools-exclude' );
+var fnTransform = transformExclude( function ( node, transformOptions, done ) {
   var callee = node.callee;
-  if ( node.type === 'CallExpression' && callee.type === 'Identifier' && callee.name === 'requireArr' ) {
 
+  if ( node.type === 'CallExpression' && callee.type === 'Identifier' && callee.name === 'requireArr' ) {
     var filePath = path.dirname( transformOptions.file );
 
     var args = node.arguments.map( function ( arg ) {
@@ -29,10 +30,7 @@ module.exports = transformTools.makeFalafelTransform( 'require-arr', options, fu
       return val;
     } );
 
-    //console.log( args );
-
     var files = expand.apply( null, args ).map( function ( f ) {
-
       f = './' + path.relative( filePath, f );
       return 'require(' + JSON.stringify( f ) + ')';
     } );
@@ -40,5 +38,7 @@ module.exports = transformTools.makeFalafelTransform( 'require-arr', options, fu
     node.update( '[' + files.join( ', ' ) + ']' );
   }
   done();
-}
-);
+} );
+
+
+module.exports = transformTools.makeFalafelTransform( 'require-arr', options, fnTransform );
