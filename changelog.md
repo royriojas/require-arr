@@ -1,5 +1,15 @@
 
 # require-arr - Changelog
+## v1.0.6
+- **Build Scripts Changes**
+  - Release v1.0.6 - [70b634a]( https://github.com/royriojas/require-arr/commit/70b634a ), [royriojas](https://github.com/royriojas), 19/07/2015 03:14:07
+    
+- **Features**
+  - Add option to exclude certain files from the transformation - [c2ec287]( https://github.com/royriojas/require-arr/commit/c2ec287 ), [royriojas](https://github.com/royriojas), 19/07/2015 03:13:19
+    
+- **Documentation**
+  - Generate changelog - [fa16b8c]( https://github.com/royriojas/require-arr/commit/fa16b8c ), [royriojas](https://github.com/royriojas), 17/07/2015 18:02:43
+    
 ## v1.0.5
 - **Build Scripts Changes**
   - Release v1.0.5 - [cca5f09]( https://github.com/royriojas/require-arr/commit/cca5f09 ), [royriojas](https://github.com/royriojas), 17/07/2015 18:02:07
