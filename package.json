@@ -15,7 +15,9 @@
     "bump": "bumpery --verify='npm run check'",
     "changelog": "changelogx -f markdown -o ./changelog.md",
     "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog'",
-    "install-hooks": "changelogx install-hook && prepush install"
+    "install-hooks": "changelogx install-hook && prepush install",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -52,7 +54,8 @@
   "dependencies": {
     "browserify-transform-tools": "^1.4.2",
     "browserify-transform-tools-exclude": "^0.1.1",
-    "glob-expand": "0.0.2"
+    "glob-expand": "0.0.2",
+    "snyk": "^1.105.0"
   },
   "bugs": {
     "url": "https://github.com/royriojas/require-arr/issues"
@@ -65,5 +68,6 @@
     "browserify transform",
     "browserify",
     "replace calls to require"
-  ]
+  ],
+  "snyk": true
 }
